@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioLab — Cardiovascular & Respiratory Physiology</title>
+  <meta name="description" content="Interactive study site for Cardiovascular and Respiratory System physiology lectures, with Arabic translation, quizzes and flashcards." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="Home">
+      <span class="brand-logo">
+        <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+          <path d="M16 28 C 6 20, 2 14, 6 8 C 9 4, 14 5, 16 9 C 18 5, 23 4, 26 8 C 30 14, 26 20, 16 28 Z" fill="#fb7185"/>
+          <path d="M5 16 H11 L13 12 L16 20 L18 14 L20 16 H27" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">Physio<b>Lab</b></span>
+    </a>
+    <nav class="topnav" id="topnav">
+      <a href="#/" data-nav="home">Home</a>
+      <a href="#/lecture/cardio" data-nav="cardio">Cardiovascular</a>
+      <a href="#/lecture/resp" data-nav="resp">Respiratory</a>
+      <a href="#/exam" data-nav="exam">Final Exam</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button data-lang="en" title="English only">EN</button>
+      <button data-lang="both" title="English + Arabic">EN + ع</button>
+      <button data-lang="ar" title="Arabic only">عربي</button>
+    </div>
+  </header>
+
+  <main id="app" class="app"></main>
+
+  <footer class="footer">
+    <p>Built from the lectures: <b>(19) Cardiovascular System</b> &amp; <b>(20) Respiratory System</b> — Reference: Sherwood, <i>Human Physiology from Cells to Systems</i>.</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/data-cardio.js"></script>
+  <script src="js/data-resp.js"></script>
+  <script src="js/diagrams-cardio.js"></script>
+  <script src="js/diagrams-resp.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
